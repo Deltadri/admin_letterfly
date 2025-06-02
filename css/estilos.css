@@ -1,0 +1,21 @@
+.hola {
+    background-color: #cfa400 !important;
+}
+
+#menu {
+    margin-right: 20px;
+}
+
+.puntuacion-comentario {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+.estrella {
+    width: 20px;
+    height: 20px;
+}
+.estrella.vacia {
+    opacity: 0.2;
+}
