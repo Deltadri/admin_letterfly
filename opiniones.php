@@ -1,3 +1,21 @@
+<!--
+_______________________________________________________________________________
+ __       ______  ______  ______  ______   ______   ______  __       __  __    
+/\ \     /\  ___\/\__  _\/\__  _\/\  ___\ /\  == \ /\  ___\/\ \     /\ \_\ \   
+\ \ \____\ \  __\\/_/\ \/\/_/\ \/\ \  __\ \ \  __< \ \  __\\ \ \____\ \____ \  
+ \ \_____\\ \_____\ \ \_\   \ \_\ \ \_____\\ \_\ \_\\ \_\   \ \_____\\/\_____\ 
+  \/_____/ \/_____/  \/_/    \/_/  \/_____/ \/_/ /_/ \/_/    \/_____/ \/_____/ 
+_______________________________________________________________________________
+Desarrollado por Adrián Fernández Ternero
+Licenciado bajo: AGPLv3
+letterfly.net
+
+
+https://github.com/Adrifer24/admin_letterfly
+
+-->
+
+
 <?php
 include 'config/conexion.php';
 include 'header.php';
@@ -64,7 +82,7 @@ $resultado = mysqli_query($conn, $query);
                         echo "<td>" . htmlspecialchars($fila['comentario']) . "</td>";
                         echo "<td>" . htmlspecialchars($fila['fecha']) . "</td>";
                         echo "<td>
-                            <a href='funciones_resenas/eliminar_resena.php?id=$id' class='btn btn-sm btn-danger'>Eliminar</a>
+                            <a href='funciones_opiniones/eliminar_opinion.php?id=$id' class='btn btn-sm btn-danger'>Eliminar</a>
                         </td>";
                         echo "</tr>";
                     }
@@ -74,5 +92,3 @@ $resultado = mysqli_query($conn, $query);
         </table>
     </div>
 </div>
-
-<?php include 'footer.php'; ?>

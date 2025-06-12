@@ -74,5 +74,3 @@ $busqueda = isset($_GET['busqueda']) ? mysqli_real_escape_string($conn, $_GET['b
         </table>
     </div>
 </div>
-
-<?php include 'footer.php'; ?>

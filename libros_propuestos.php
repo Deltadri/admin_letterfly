@@ -78,4 +78,3 @@ $resultado = mysqli_query($conn, $query);
     </div>
 </div>
 
-<?php include 'footer.php'; ?>

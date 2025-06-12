@@ -1,4 +1,5 @@
 <?php
+include '../header.php';
 include '../config/conexion.php';
 
 if (!isset($_GET['id'])) {
@@ -33,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Restablecer contraseña</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-dark text-white">
+<body>
 <div class="container mt-5">
     <h3>Restablecer contraseña al usuario #<?= $id ?></h3>
     <form method="POST">

@@ -154,5 +154,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <a href="../libros.php" class="btn btn-secondary">Cancelar</a>
     </form>
 </div>
-
-<?php include '../footer.php'; ?>

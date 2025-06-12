@@ -1,3 +1,20 @@
+<!--
+_______________________________________________________________________________
+ __       ______  ______  ______  ______   ______   ______  __       __  __    
+/\ \     /\  ___\/\__  _\/\__  _\/\  ___\ /\  == \ /\  ___\/\ \     /\ \_\ \   
+\ \ \____\ \  __\\/_/\ \/\/_/\ \/\ \  __\ \ \  __< \ \  __\\ \ \____\ \____ \  
+ \ \_____\\ \_____\ \ \_\   \ \_\ \ \_____\\ \_\ \_\\ \_\   \ \_____\\/\_____\ 
+  \/_____/ \/_____/  \/_/    \/_/  \/_____/ \/_/ /_/ \/_/    \/_____/ \/_____/ 
+_______________________________________________________________________________
+Desarrollado por Adrián Fernández Ternero
+Licenciado bajo: AGPLv3
+letterfly.net
+
+
+https://github.com/Adrifer24/admin_letterfly
+
+-->
+
 <?php
 // No se necesita session_start() aquí porque Authelia ya gestiona el acceso
 ?>
@@ -15,7 +32,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-success">
+<nav class="navbar navbar-expand-lg navbar-custom">
   <div class="container-fluid">
     <a class="navbar-brand" href="/index.php">
       <img src="/img/logo/logo.png" alt="Logo Letterfly" width="130">

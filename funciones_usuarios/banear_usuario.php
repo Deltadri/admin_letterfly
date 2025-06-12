@@ -1,4 +1,5 @@
 <?php
+include '../header.php';
 include '../config/conexion.php';
 
 if (!isset($_GET['id'])) {

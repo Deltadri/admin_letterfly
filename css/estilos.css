@@ -6,6 +6,10 @@
     margin-right: 20px;
 }
 
+.navbar-custom {
+  background-color: #00bf63;
+}
+
 .puntuacion-comentario {
     display: inline-flex;
     align-items: center;

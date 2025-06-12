@@ -1,3 +1,20 @@
+<!--
+_______________________________________________________________________________
+ __       ______  ______  ______  ______   ______   ______  __       __  __    
+/\ \     /\  ___\/\__  _\/\__  _\/\  ___\ /\  == \ /\  ___\/\ \     /\ \_\ \   
+\ \ \____\ \  __\\/_/\ \/\/_/\ \/\ \  __\ \ \  __< \ \  __\\ \ \____\ \____ \  
+ \ \_____\\ \_____\ \ \_\   \ \_\ \ \_____\\ \_\ \_\\ \_\   \ \_____\\/\_____\ 
+  \/_____/ \/_____/  \/_/    \/_/  \/_____/ \/_/ /_/ \/_/    \/_____/ \/_____/ 
+_______________________________________________________________________________
+Desarrollado por Adrián Fernández Ternero
+Licenciado bajo: AGPLv3
+letterfly.net
+
+
+https://github.com/Adrifer24/admin_letterfly
+
+-->
+
 <?php
 include 'config/conexion.php';
 include 'header.php';
@@ -58,7 +75,13 @@ $totalbaneados = mysqli_fetch_assoc(mysqli_query($conn, "SELECT COUNT(*) AS tota
       <div class="card-body">
         <h5 class="card-title">Libro con más reseñas</h5>
         <p class="card-text fs-5">
-          <?php echo $libroPopular ? $libroPopular['titulo'] . ' (' . $libroPopular['total'] . ' reseñas)' : 'Ninguno'; ?>
+          <?php 
+            if ($libroPopular) {
+              echo htmlspecialchars($libroPopular['titulo']) . " (" . $libroPopular['total'] . " reseñas)";
+            } else {
+              echo "No hay reseñas disponibles.";
+            }
+          ?>
         </p>
       </div>
     </div>

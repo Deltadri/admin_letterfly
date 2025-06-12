@@ -1,5 +1,4 @@
 <?php
-// Include the header menu
 require ("../../header.php");
 ?>
 
